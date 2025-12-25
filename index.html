@@ -9,14 +9,14 @@
       font-family: Arial, Helvetica, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f6f8;
+      background-color: #fff1f2;
     }
     header {
-      background-color: #d8bee6;
+      background-color: #ffffff;
       padding: 0;
     }
     nav {
-      background-color: #d8bee6;
+      background-color: #ffffff;
       padding: 20px 40px;
       display: flex;
       justify-content: space-between;
@@ -24,7 +24,7 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     nav a {
-      color: #e985f2;
+      color: #e86de4;
       margin-left: 20px;
       text-decoration: none;
       font-weight: bold;
@@ -36,8 +36,31 @@
       padding: 80px 40px;
       background-color: #ffffff;
     }
+    .section {
+      padding: 80px 40px;
+      background-color: #fff1f2;
+    }
+    .section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .section p {
+      max-width: 700px;
+      color: #555;
+      line-height: 1.6;
+    }
+    .contact-box {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 500px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .contact-box p {
+      margin: 10px 0;
+    }
     .profile-card {
-      background-color: #f2e9df;
+      background-color: #fbcfe8;
       padding: 30px;
       border-radius: 12px;
       width: 260px;
@@ -77,7 +100,7 @@
       display: inline-block;
     }
     footer {
-      background-color: #f472b6;
+      background-color: #be185d;
       color: white;
       text-align: center;
       padding: 15px;
@@ -89,9 +112,9 @@
   <header></header>
 
   <nav>
-    <a href="#beranda">Beranda</a>
-    <a href="#tentang">Tentang</a>
-    <a href="#kontak">Kontak</a>
+    <a href="beranda">Beranda</a>
+    <a href="tentang">Tentang</a>
+    <a href="kontak">Kontak</a>
   </nav>
 
   <div class="hero" id="beranda">
@@ -108,14 +131,30 @@
     </div>
   </div>
 
+  <!-- Tentang -->
+  <section class="section" id="tentang">
+    <h2>Tentang Saya</h2>
+    <p>
+      Saya adalah seorang Project Manager yang memiliki ketertarikan dalam perencanaan,
+      pengelolaan tim, dan penyelesaian proyek secara efektif dan tepat waktu. Website ini
+      dibuat sebagai contoh portfolio sederhana menggunakan HTML dan CSS.
+    </p>
+  </section>
+
+  <!-- Kontak -->
+  <section class="section" id="kontak">
+    <h2>Kontak</h2>
+    <div class="contact-box">
+      <p><strong>Email:</strong> maya@email.com</p>
+      <p><strong>Telepon:</strong> 08xxxxxxxxxx</p>
+      <p><strong>Instagram:</strong> @maya.nelson</p>
+      <p><strong>LinkedIn:</strong> linkedin.com/in/maya</p>
+    </div>
+  </section>
+
   <footer>
     <p>&copy; Abby Copyright Coporation
   </footer>
 
 </body>
 </html>
-
-
-
-
-
