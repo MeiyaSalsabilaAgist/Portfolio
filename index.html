@@ -12,52 +12,89 @@
       background-color: #f4f6f8;
     }
     header {
-      background-color: #2c3e50;
-      color: white;
-      padding: 20px;
-      text-align: center;
+      background-color: #ffffff;
+      padding: 0;
     }
     nav {
-      background-color: #34495e;
-      padding: 10px;
-      text-align: center;
+      background-color: #ffffff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     nav a {
-      color: white;
-      margin: 0 15px;
+      color: #333;
+      margin-left: 20px;
       text-decoration: none;
       font-weight: bold;
     }
-    nav a:hover {
-      text-decoration: underline;
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 40px;
+      background-color: #ffffff;
     }
-    .container {
-      padding: 20px;
+    .profile-card {
+      background-color: #f2e9df;
+      padding: 30px;
+      border-radius: 12px;
+      width: 260px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      margin-right: 60px;
     }
-    .card {
-      background-color: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    .profile-card img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .profile-card h3 {
+      margin: 10px 0 5px;
+    }
+    .profile-card p {
+      font-size: 14px;
+      color: #555;
+    }
+    .hero-text h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+    .hero-text p {
+      margin: 15px 0 25px;
+      color: #555;
+      max-width: 400px;
+    }
+    .buttons a {
+      padding: 12px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 15px;
+      display: inline-block;
+    }
+    .btn-primary {
+      background-color: #2563eb;
+      color: white;
+    }
+    .btn-outline {
+      border: 2px solid #2563eb;
+      color: #2563eb;
     }
     footer {
       background-color: #2c3e50;
       color: white;
       text-align: center;
       padding: 15px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>DPRD</h1>
-    <p>Ciri Ciri Tikus</p>
-  </header>
+  <header></header>
 
   <nav>
     <a href="#beranda">Beranda</a>
@@ -65,21 +102,20 @@
     <a href="#kontak">Kontak</a>
   </nav>
 
-  <div class="container">
-    <div class="card" id="beranda">
-      <h2>Beranda</h2>
-      <p>Ciri ciri tikus yang pertama yaitu gendut.</p>
+  <div class="hero" id="beranda">
+    <div class="profile-card">
+      <img src="gambar/tikus.jpg" alt="Foto Profil">
+      <h3>Maya Nelson</h3>
+      <p>PROJECT MANAGER</p>
     </div>
 
-    <div class="card" id="tentang">
-      <h2>Tentang</h2>
-      <p>Website ini cocok untuk orang yang ingin masuk jurang.</p>
-    </div>
-
-    <div class="card" id="kontak">
-      <h2>Kontak</h2>
-      <p>Email: Dprdkotakaltim@email.com</p>
-      <p>Telepon: 081234567890</p>
+    <div class="hero-text">
+      <h1>Hello</h1>
+      <p>Here's who I am & what I do. Ini adalah halaman home dengan tampilan profil modern seperti contoh gambar.</p>
+      <div class="buttons">
+        <a href="#" class="btn-primary">Resume</a>
+        <a href="#" class="btn-outline">Projects</a>
+      </div>
     </div>
   </div>
 
