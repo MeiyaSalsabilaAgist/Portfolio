@@ -115,8 +115,16 @@
     }
     .about-image img {
       width: 250px;
-      height: 500px;
+      height: auto;
+      border-radius: 16px;
     }
+    #About_Me {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
   </style>
 </head>
 <body>
@@ -143,21 +151,23 @@
     </div>
   </div>
 
-  <!-- Tentang -->
-  <section class="section" id="About_Me">
-    <h2>About Me</h2>
-    <p>
-      Meiya Salsabila Agist,
-      NIM : 241011495,
-      English Literature Study Program, Faculty of Cultural Sciences
-      Balikpapan University.
-          <div class="about-image">
-      <img src="foto 2.jpeg" alt="">
-    </div>
+<!-- Tentang -->
+<section class="section" id="About_Me">
+  <h2>About Me</h2>
+
+  <p>
+    Meiya Salsabila Agist,<br>
+    NIM : 241011495,<br>
+    English Literature Study Program,<br>
+    Faculty of Cultural Sciences,<br>
+    Balikpapan University.
+  </p>
+
+  <div class="about-image">
+    <img src="foto 2.jpeg" alt="Foto About Me">
   </div>
 </section>
-    </p>
-  </section>
+
 
   <!-- Kontak -->
   <section class="section" id="Contact">
@@ -179,6 +189,7 @@
 
 </body>
 </html>
+
 
 
 
